@@ -40,9 +40,13 @@
 <body>
 	<h1>HTML Forms</h1>
 	<form action="web_page_to_send" method="post">
-	<!-- get - used if you ask value from server -->
-	<!-- post - used if you send data TO the server -->
-	<!-- 	Submitting Text:
+	<!-- method attribute values:
+		get - used if you ask value FROM server
+			- sends name/value pairs as plain text
+		post - used if you send value TO the server
+			- does not send name/value pairs as text 
+	-->
+	<!-- 	Submitting Text
 		<br>
 		<br>
 		Username: <input type="text" name="username"> <br>
