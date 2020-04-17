@@ -1,0 +1,141 @@
+<!-- 
+	Submitting Text:
+		TEXT input (single line text)
+		PASSWORD input (single line but hidden text)
+		TEXT area (multi-line text)
+
+	Making Choices:
+		Radio butttons (used to choose one of a number of options)
+		Checkboxes (used to choose one or more from a number of options)
+		Dropdown boxes (used to select from a list)
+
+	Submitting Forms:
+		Submit buttons (used to sumbit data[name/value] to server/page)
+		Image buttons (similar to submit buttons but use image)
+
+	Uploading Files:
+		File uploads (used to submit files[images/docs] to a server)
+
+	Making it Standard:
+		Labelling form controls
+
+	Form Validations:
+		required
+		placeholder
+
+	Grouping Form Elements
+
+	HTML5 Input types
+		date
+		email
+		url
+		search
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Forms</title>
+</head>
+<body>
+	<h1>HTML Forms</h1>
+	<form action="web_page_to_send" method="post">
+	<!-- get - used if you ask value from server -->
+	<!-- post - used if you send data TO the server -->
+	<!-- 	Submitting Text:
+		<br>
+		<br>
+		Username: <input type="text" name="username"> <br>
+		Password: <input type="password" name="password"> <br>
+		Comment: <br>
+		<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+	-->	
+	<!-- 	Making Choices:
+		<br>
+		<br>
+		Gender:
+		<input type="radio" name="gender" value="male"> Male
+		<input type="radio" name="gender" value="female"> Female
+		<input type="radio" name="gender" value="other"> Other
+		<br>
+		<br>
+		What best describes you? <br>
+		<input type="checkbox" name="desc" value="tall"> Tall <br>
+		<input type="checkbox" name="desc" value="dark"> Dark <br>
+		<input type="checkbox" name="desc" value="handsome"> Handsome
+		<br>
+		<br>
+		Your favorite ECQ pasttime? <br>
+		<select name="ecqpasttime" id="ecqpasttime">
+			<option value="eat">Eat</option>
+			<option value="sleep">Sleep</option>
+			<option value="ml">Mobile Legends</option>
+			<option value="dota">Dota</option>
+		</select>
+		<br>
+		<br>
+		Your favorite ECQ pasttimes (select 2 or more by pressing Ctrl)? <br>
+		<select name="ecqpasttime2" id="ecqpasttime2" size="2" multiple="multiple">
+			<option value="eat">Eat</option>
+			<option value="sleep">Sleep</option>
+			<option value="ml">Mobile Legends</option>
+			<option value="dota">Dota</option>
+		</select>
+	-->
+	<!-- 	Submitting Forms:
+		<br>
+		<br>
+		Username: <input type="text" name="username"> <br>
+		Password: <input type="password" name="password"> <br>
+		Comment: <br>
+		<textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+		<input type="submit" value="Submit">
+		<input type="image" src="submit.png" width="50">
+		<button><img src="submit.png" alt="submit button image" width="50"></button>
+	-->
+	<!-- 	Uploading a File
+		<br>
+		<br>
+		Please choose a file to upload: <br>
+		<input type="file">
+	-->	
+	<!-- 	Labelling of Form Controls
+		<br>
+		<br>
+		<label for="name">Username:</label>
+		<input type="text" name="username" id="name"> <br>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password"> <br> 
+	-->
+	<!-- 	Form Validation:
+		<br>
+		<br>
+		<label for="name">Username:</label>
+		<input type="text" name="username" id="name" required="required"> <br>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" required="required"> <br> 
+		<input type="submit" value="Submit">
+	-->
+	<!-- 	Grouping Form Controls
+		<br>
+		<br>
+		<fieldset>
+			<legend>User Feedback</legend>
+			Username: <input type="text" name="username"> <br>
+			Comment: <br>
+			<textarea name="comment" id="comment" cols="30" rows="10"></textarea>	
+		</fieldset>
+	-->	
+	<!-- 	Misc HTML5 Input types
+		<br>
+		<br>
+		Date: <input type="date"> <br>
+		Email: <input type="email" required="required"><br>
+		Webpage: <input type="url" required="required"> <br>
+		Search: <input type="search"> <br>
+		<input type="submit" value="Submit">
+	-->
+	</form>
+
+</body>
+</html>
