@@ -1,0 +1,139 @@
+<!-- This will produce meta error on utf if validated. It is here only for guide to the topics discussed below
+	HTML versions
+	Adding comments in HTML documents
+	Global attributes (class and id)
+	Block or inline elements
+	Grouping parts of a page (span and div)
+	Embedding a page (iframes)
+	Adding page info (meta)
+		description 
+		keywords 
+		author 
+		robots 
+		viewport 
+	Escape characters (copyright, trademark, etc)
+-->
+
+<!-- HTML Versions
+	HTML5
+	<!DOCTYPE html>
+
+	XHTML 1.0 Tansitional
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/ xhtml1-transitional.dtd">
+
+
+	XHTML 1.0 Strict
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+	HTML 4
+	<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">	
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Extra Markup</title>
+	<style>
+		.syaget {
+			text-transform: uppercase;
+		}
+		.portante {
+			color: red;
+		}
+		#sibog {
+			margin-left: 30px;
+		}
+	</style>
+	<!-- meta tags for SEO -->
+	<meta name="description"
+		content="About HTML Extra markups" />
+	<meta name="keywords" 
+		content="html5, markup, class, id, div, span" />
+	<meta name="author" 
+		content="Angel Abellanosa" />
+	<meta name="robots"
+		content="index,follow" />
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1.0" />
+
+</head>
+<body>
+	<!-- Contents or tags between these are ignored -->
+
+
+	<!-- Global Attribute (class and id)
+		<h1>Global Attributes</h1>
+		
+		<p class="syaget">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ab voluptatibus doloribus possimus vitae provident nam, laborum, recusandae dolorem officiis voluptas corrupti consectetur eum delectus deleniti doloremque dolorum a distinctio.</p>
+
+		<p id="sibog">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quasi, amet necessitatibus iusto non minima. Officiis quam recusandae magni modi harum quaerat quod cumque excepturi perferendis itaque, labore molestias odit!</p>
+
+		<p class="syaget portante">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sequi asperiores, vero harum quam quae, nemo laborum ad impedit reiciendis fuga officiis dolores suscipit distinctio exercitationem ipsam incidunt deleniti culpa.</p>
+	-->	
+
+	<!-- Block level elements (p, h1, ul, ol, li) 
+		<h1>Block Level Elements</h1>
+		<p>lorem</p><p>lorem</p>
+	-->
+
+	<!-- Inline elements (em, b, input, img) 
+		<h1>Inline Elements</h1>
+		<input type="text" /><input type="text" />
+	-->
+
+	<!-- Grouping Parts of a Page (span, div) 
+		<h1>Grouping parts of a page</h1>
+		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="portante">Beatae ab voluptatibus</span> doloribus possimus vitae provident nam, laborum, recusandae dolorem officiis voluptas corrupti consectetur eum delectus deleniti doloremque dolorum a distinctio.</p>
+
+		<div id="sibog">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quasi, amet necessitatibus iusto non minima. Officiis quam recusandae magni modi harum quaerat quod cumque excepturi perferendis itaque, labore molestias odit!</p>
+
+			<p>Example List:</p>
+			<ul>
+				<li>List 1</li>
+				<li>List 2</li>
+				<li>List 3</li>
+				<li>List 4</li>
+			</ul>
+		</div>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sequi asperiores, vero harum quam quae, nemo laborum ad impedit reiciendis fuga officiis dolores suscipit distinctio exercitationem ipsam incidunt deleniti culpa.</p>
+	-->
+
+	<!-- Embedding web pages (iframe) 
+		<h1>Embedding a page</h1>
+		<h2>Our Awesome School</h2>
+		<iframe 
+			src="http://maps.google.co.uk/maps?q=Andres+Soriano+College
+				&amp;output=embed" 
+			frameborder="0"
+			width="450"
+			height="350">
+		</iframe>
+		<h2>One Awesome Video</h2>
+		<iframe 
+			src="https://www.youtube.com/embed/acoUhY6UDyA" 
+			frameborder="0"
+			width="450"
+			height="350">
+		</iframe>
+	-->
+
+	<!-- Escape characters/Character Entities -->
+	<h1>Escape Characters</h1>
+	
+	<p>The less than sign is marked up as &lt;</p>
+	<p>The greater than sign is marked up as &gt;</p>
+	Other character entities: <br />
+	<ul>
+		<li>copyright symbol as &copy;</li>
+		<li>ampersand symbol as &amp;</li>
+		<li>trademark symbol as &trade;</li>
+		<li>dollar symbol as &dollar;</li>
+	</ul>
+
+</body>
+</html>
