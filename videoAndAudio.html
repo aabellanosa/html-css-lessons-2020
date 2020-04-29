@@ -1,0 +1,65 @@
+<!-- Topics
+	Adding a Flash Movie in HTML Docs
+	Adding HTML 5 <video> and <audio> elements
+ -->
+
+<!-- Adding Flash Movies
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML Video and Audio</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+		<script>
+			swfobject.embedSWF("res/chicken.swf","chicken","500","150","8.0.0");
+		</script>
+	</head>
+	<body>
+		<div id="chicken">An animation of a chicken doing its thing.</div>
+
+	</body>
+	</html> 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Video and Audio</title>
+</head>
+<body>
+
+<!-- Simple Video Sample 	
+	<video src="res/small.webm" controls>
+		<p>This browser doesn't support HTML5 video please click <a href="res/small.webm">a link the video</a> instead.</p>
+	</video>
+ -->
+
+<!-- Video with Fallback Formats 
+	<video controls>
+		<source src="res/small.mp4" type="video/mp4">
+		<source src="res/small.webm" type="video/webm">
+		<p>This browser doesn't support HTML5 video please click <a href="res/small.mp4">a link the video</a> instead.</p>
+	</video>
+
+ -->
+
+<!-- Video with Attributes 
+	<video controls width="560" height="320" autoplay loop muted poster="res/dulaan.png" preload="none/auto/metadata">
+		<source src="res/small.mp4" type="video/mp4">
+		<source src="res/small.webm" type="video/webm">
+		<p>This browser doesn't support HTML5 video please click <a href="res/small.mp4">a link the video</a> instead.</p>
+	</video>
+ -->
+
+ 	<h1>Adding Audio Elements</h1>
+
+	<audio controls autoplay loop muted preload="none/auto/metadata">
+		<source src="res/out.ogg" type="audio/ogg">
+		<source src="res/out.mp3" type="audio/mp3">
+		<p>This browser doesn't support HTML5 audio please click <a href="res/out.mp3">a link the audio</a> instead.</p>
+	</audio>
+
+
+</body>
+</html>
