@@ -1,0 +1,112 @@
+/* How comments are written in CSS */
+
+/* Universal Selector */
+/*
+	* {
+		color: red;
+	}
+
+*/
+
+/*Type Selector */
+/*
+	h1, p, ul {
+		border: solid black 1px;
+		color: red;
+	}
+*/
+
+/* Class Selector (Classes can be re-used in HTML) */
+/*
+	.portante {
+		color: red;
+	}
+*/
+
+/* ID Selector (ID is unique cannot be reused in HTML*/
+/*
+	#introPara {
+		border: solid black 1px;
+		margin-left: 20px;
+	}
+*/
+
+/* Child Selector */
+/*
+	p > em {  
+		color: red;
+	}
+
+	li > em {
+		background-color: yellow;
+	}
+*/
+
+/* Descendant Selector */
+/*
+	body em {
+		color: red;
+	}
+*/
+
+/* Adjacent Sibling Selector */
+/*
+	h1 + p {
+		color: red;
+	}
+*/
+
+/* General Sibling Selector */
+/*
+	h1 ~ ul {
+		color: red;
+	}
+*/
+
+/* How CSS rules are applied*/
+	/* Last rule rules */
+
+/*	h1 {
+		color: red;
+	}
+
+	h1 {
+		color: blue;
+	}
+
+	h1 {
+		color: yellow;
+	}
+*/
+
+	/* Specificity 
+		The more specific the rule will prevail
+	*/
+	
+	h1 {
+		color: yellow;
+	}
+
+	 * {
+	 	color: red;
+	 }
+
+	li > em {
+		background-color: green;
+	}
+
+	em {
+		background-color: yellow;
+	}
+
+	/* For type precedence: 
+		Inline first priority
+		Internal 2nd priority
+		External Last Priority
+
+	*/
+
+
+
+
+

@@ -1,0 +1,69 @@
+<!-- Writing CSS in 3 different ways
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Writing CSS in 3 Ways</title>
+	<!-- External Stylesheet 
+	 -->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Internal Stylesheet 
+		<style>
+			h1, p {
+				color: red;
+			}
+		</style> 
+	 -->
+</head>
+<body>
+<!-- Inline Stylesheet
+	<h1 style="color: red;">Sample Title</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Fugiat</b> consequuntur cum porro harum sint animi. <em>Reprehenderit architecto earum,</em> cupiditate qui.</p>
+
+	<p style="color: blue; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eveniet veritatis facilis iste aliquid non, ipsum voluptatem illum modi aspernatur, error similique perspiciatis, eligendi eaque in animi! Minima ad nesciunt explicabo fugit, reiciendis voluptatem beatae.</p>
+
+	<ul>
+		<li>List Item 1</li>
+		<li>List Item 2</li>
+		<li>List Item 3</li>
+		<li>List Item 4</li>
+	</ul>
+
+ -->
+
+<!-- Internal Stylesheet 
+	<h1>Sample Title</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Fugiat</b> consequuntur cum porro harum sint animi. <em>Reprehenderit architecto earum,</em> cupiditate qui.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eveniet veritatis facilis iste aliquid non, ipsum voluptatem illum modi aspernatur, error similique perspiciatis, eligendi eaque in animi! Minima ad nesciunt explicabo fugit, reiciendis voluptatem beatae.</p>
+
+	<ul>
+		<li>List Item 1</li>
+		<li>List Item 2</li>
+		<li>List Item 3</li>
+		<li>List Item 4</li>
+	</ul> 	
+
+ -->
+
+	<h1>Sample Title</h1>
+
+	<p id="introPara" class="portante">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <b>Fugiat</b> consequuntur cum porro harum sint animi. <em>Reprehenderit architecto earum,</em> cupiditate qui.</p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eveniet veritatis facilis iste aliquid non, ipsum voluptatem illum modi aspernatur, error similique perspiciatis, eligendi eaque in animi! Minima ad nesciunt explicabo fugit, reiciendis voluptatem beatae.</p>
+
+	<ul>
+		<li><em>List Item 1</em></li>
+		<li class="portante">List Item 2</li>
+		<li>List Item 3</li>
+		<li>List Item 4</li>
+	</ul>
+
+</body>
+
+
+</html>
